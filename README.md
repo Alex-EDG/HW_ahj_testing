@@ -1,6 +1,6 @@
 # Домашнее задание к занятию "4. Организация тестирования"
 
-[![Build status](https://ci.appveyor.com/api/projects/status/kp3wsgeu33owawdk?svg=true)](https://ci.appveyor.com/project/Alex-EDG/hw-ahj-testing)
+[![Build status](https://ci.appveyor.com/api/projects/status/glo2xee2w6k4qqji?svg=true)](https://ci.appveyor.com/project/Alex-EDG/hw-ahj-testing)
 
 [Github Pages](https://alex-edg.github.io/HW_ahj_testing/)
 
