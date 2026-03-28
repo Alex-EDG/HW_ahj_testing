@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "MontserratRegular";  
+  src: url('../font/Montserrat-Regular.ttf') format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  background: rgb(199, 198, 198); 
+}
+
+#card-container {
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  font-family: "MontserratRegular", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;  
+}
+
+[data-widget="creditCard-form-widget"] {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(236, 236, 236); 
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 20px 20px; 
+}
+
+.form-logo {
+  display: flex;
+  margin-top: 20px;
+}
+
+.form-logo img {
+  filter: grayscale(100%);
+}
+
+.form-logo img.bright {
+  filter:none;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo:not(:first-child) {
+  margin-left: 20px;
+}
+
+.form-container {
+  display:flex;
+  align-items:center;
+  margin-top: 20px; 
+}
+
+.form-control {
+  width: 100%;  
+}
+
+[data-id="creditCard-input"] {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  font-family: inherit;
+  font-size: 100%; 
+  color: #000;
+  background-color: #fff;
+  border: 1px solid rgb(160, 157, 157);
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;  
+  padding: 10px 60px 10px 10px;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out;  
+}
+
+.valid {
+  background-image: url(../img/valid-card.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 35px; 
+}
+
+.invalid {
+  background-image: url(../img/invalid-card.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 35px;  
+}
+
+[data-id="creditCard-input"]:hover { 
+  border-color: rgb(85, 226, 93);
+  border-radius: 5px;
+}
+
+.form-button { 
+  margin-left: 20px;
+}
+
+[data-id="creditCard-submit"] {
+  display: block;
+  min-width: 186px; 
+  background-color: #5eb462;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%; 
+  color: #fff; 
+  cursor: pointer; 
+  border: none;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease-out, color 0.3s ease-out; 
+  padding: 10px;
+}
+
+[data-id="creditCard-submit"]:hover {
+  background-color: rgb(85, 226, 93);
+}
+
+[data-id="creditCard-submit"]:focus {
+  outline: 3px solid rgb(85, 226, 93); 
+}
+
+.form-message {
+  height: 20px;
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.messageInvalid {
+  color: red;
+}
+
+.messageValid {
+  color:#5eb462
+}
